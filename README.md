@@ -2,9 +2,9 @@
 
 ## How do I install these formulae?
 
-`brew install steffakasid/amiclean/<formula>`
+`brew install steffakasid/amiclean/amiclean`
 
-Or `brew tap steffakasid/amiclean` and then `brew install <formula>`.
+Or `brew tap steffakasid/amiclean` and then `brew install amiclean`.
 
 ## Documentation
 
