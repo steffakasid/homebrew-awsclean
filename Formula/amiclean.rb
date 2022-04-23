@@ -9,17 +9,17 @@ class Amiclean < Formula
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/steffakasid/amiclean/releases/download/0.2/amiclean_0.2_Darwin_arm64.tar.gz"
-      sha256 "f0163d121c7ad0f4812f23a1d3966ca8dd5fb290bd6f677e58a9361932c7f466"
+    if Hardware::CPU.intel?
+      url "https://github.com/steffakasid/amiclean/releases/download/0.2/amiclean_0.2_Darwin_x86_64.tar.gz"
+      sha256 "eaf68be9c617c51998265b6a1da3cd5d2f713486d2417e8732730e809feae646"
 
       def install
         bin.install "amiclean"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/steffakasid/amiclean/releases/download/0.2/amiclean_0.2_Darwin_x86_64.tar.gz"
-      sha256 "770e84902d3f726b4844d8dc82bba33ab417f8ef58341bee342048a71aa98c2d"
+    if Hardware::CPU.arm?
+      url "https://github.com/steffakasid/amiclean/releases/download/0.2/amiclean_0.2_Darwin_arm64.tar.gz"
+      sha256 "d86c83842ba2693525cf4bb328a135539debba25fcb7d9a13da560d59d80f036"
 
       def install
         bin.install "amiclean"
@@ -30,7 +30,7 @@ class Amiclean < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/steffakasid/amiclean/releases/download/0.2/amiclean_0.2_Linux_arm64.tar.gz"
-      sha256 "550c2208450ea1163637c5783dc19619568fa4e5d830afda5ddbe3bb86f01620"
+      sha256 "661779a246f63e001e6515f7aaef0d1d2b26c46034c20df8349c0089934a9c53"
 
       def install
         bin.install "amiclean"
@@ -38,7 +38,7 @@ class Amiclean < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/steffakasid/amiclean/releases/download/0.2/amiclean_0.2_Linux_x86_64.tar.gz"
-      sha256 "3cdb4da058a34dac908eed02db69eacb45adc21721db40cdda8c3c97d4e66f27"
+      sha256 "812e7d7284354ad0dd591d77ea8e23ae277e46674dd80ce6c3fc534ed23d6ecd"
 
       def install
         bin.install "amiclean"
