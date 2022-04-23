@@ -5,21 +5,21 @@
 class Amiclean < Formula
   desc "This tool can be used to cleanup old amis which are unused"
   homepage "https://github.com/steffakasid/trivy-project-scanner"
-  version "0.1"
+  version "0.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/steffakasid/amiclean/releases/download/0.1/amiclean_0.1_Darwin_arm64.tar.gz"
-      sha256 "a70396d3c66701e8b92e84d3433b9bf6348c860b6ee95d547b5bd5d4fbd38ff0"
+      url "https://github.com/steffakasid/amiclean/releases/download/0.2/amiclean_0.2_Darwin_arm64.tar.gz"
+      sha256 "f0163d121c7ad0f4812f23a1d3966ca8dd5fb290bd6f677e58a9361932c7f466"
 
       def install
         bin.install "amiclean"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/steffakasid/amiclean/releases/download/0.1/amiclean_0.1_Darwin_x86_64.tar.gz"
-      sha256 "91f67d549e261b473218837b651255cb8f298efb7c20d91bd823a5d88e575c25"
+      url "https://github.com/steffakasid/amiclean/releases/download/0.2/amiclean_0.2_Darwin_x86_64.tar.gz"
+      sha256 "770e84902d3f726b4844d8dc82bba33ab417f8ef58341bee342048a71aa98c2d"
 
       def install
         bin.install "amiclean"
@@ -29,16 +29,16 @@ class Amiclean < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steffakasid/amiclean/releases/download/0.1/amiclean_0.1_Linux_arm64.tar.gz"
-      sha256 "f0bae7fb46ab802798e1f740e101ede4492330c94addcc5a638b985df38bf17c"
+      url "https://github.com/steffakasid/amiclean/releases/download/0.2/amiclean_0.2_Linux_arm64.tar.gz"
+      sha256 "550c2208450ea1163637c5783dc19619568fa4e5d830afda5ddbe3bb86f01620"
 
       def install
         bin.install "amiclean"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/steffakasid/amiclean/releases/download/0.1/amiclean_0.1_Linux_x86_64.tar.gz"
-      sha256 "bba56e52fcd0358431feda2cc6442d3b90bb78806706144e81b179eb5cf53524"
+      url "https://github.com/steffakasid/amiclean/releases/download/0.2/amiclean_0.2_Linux_x86_64.tar.gz"
+      sha256 "3cdb4da058a34dac908eed02db69eacb45adc21721db40cdda8c3c97d4e66f27"
 
       def install
         bin.install "amiclean"
