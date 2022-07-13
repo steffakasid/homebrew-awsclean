@@ -1,10 +1,10 @@
-# Steffakasid Amiclean
+# Steffakasid Awsclean
 
 ## How do I install these formulae?
 
-`brew install steffakasid/amiclean/amiclean`
+`brew install steffakasid/awsclean/awsclean`
 
-Or `brew tap steffakasid/amiclean` and then `brew install amiclean`.
+Or `brew tap steffakasid/awsclean` and then `brew install awsclean`.
 
 ## Documentation
 
