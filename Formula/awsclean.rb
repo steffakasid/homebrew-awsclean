@@ -5,21 +5,21 @@
 class Awsclean < Formula
   desc "This tool can be used to cleanup old amis which are unused"
   homepage "https://github.com/steffakasid/trivy-project-scanner"
-  version "0.14"
+  version "0.15"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/steffakasid/awsclean/releases/download/v0.14/awsclean_0.14_darwin_amd64.tar.gz"
-      sha256 "ac0f15b530162e6401169b9fe7fb8c8108ea0b3d1ff1ec0e3fb64abfaadbe240"
+    if Hardware::CPU.arm?
+      url "https://github.com/steffakasid/awsclean/releases/download/v0.15/awsclean_0.15_darwin_arm64.tar.gz"
+      sha256 "6496b67016629ee30ba35330f6122f2d552719014e417be92e41b1c9c7238792"
 
       def install
         bin.install "awsclean"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/steffakasid/awsclean/releases/download/v0.14/awsclean_0.14_darwin_arm64.tar.gz"
-      sha256 "483c44bd1d57c388e7e22b533c447d3d5a60323b6bee8abdf9206c4acc5382c7"
+    if Hardware::CPU.intel?
+      url "https://github.com/steffakasid/awsclean/releases/download/v0.15/awsclean_0.15_darwin_amd64.tar.gz"
+      sha256 "73181b0c91435b5a1cee0f3be959a2847a825b5c0e02a843ea8ae587122621e0"
 
       def install
         bin.install "awsclean"
@@ -29,16 +29,16 @@ class Awsclean < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steffakasid/awsclean/releases/download/v0.14/awsclean_0.14_linux_arm64.tar.gz"
-      sha256 "84a7d805a08cd6592dcb09341b6095fde3bad4b9f5720d9228205a9e73b64f8e"
+      url "https://github.com/steffakasid/awsclean/releases/download/v0.15/awsclean_0.15_linux_arm64.tar.gz"
+      sha256 "4947f511fc0dc79ddab2bf6faedd0e6537e8d9d67cfa40412575f918e23c30ef"
 
       def install
         bin.install "awsclean"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/steffakasid/awsclean/releases/download/v0.14/awsclean_0.14_linux_amd64.tar.gz"
-      sha256 "7f2b0e055bfd1ad3837df29a74d221917825ea97d92779eafe69e576e1046bfd"
+      url "https://github.com/steffakasid/awsclean/releases/download/v0.15/awsclean_0.15_linux_amd64.tar.gz"
+      sha256 "2fe3a3908df95736f6603bfc5c23199bb515c967608593638d9c8b87c7c9c9e4"
 
       def install
         bin.install "awsclean"
