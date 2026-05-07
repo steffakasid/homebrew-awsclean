@@ -7,6 +7,7 @@ class Awsclean < Formula
   homepage "https://github.com/steffakasid/trivy-project-scanner"
   version "1.12.1"
   license "Apache-2.0"
+  deprecate! date: "2026-05-07", because: "use steffakasid/tap/awsclean instead"
 
   on_macos do
     on_intel do

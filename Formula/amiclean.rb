@@ -7,6 +7,7 @@ class Amiclean < Formula
   homepage "https://github.com/steffakasid/trivy-project-scanner"
   version "0.3"
   license "Apache-2.0"
+  deprecate! date: "2026-05-07", because: "use steffakasid/tap/amiclean instead"
 
   on_macos do
     if Hardware::CPU.intel?
