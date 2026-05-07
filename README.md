@@ -1,11 +1,14 @@
-# Steffakasid Awsclean
+# DEPRECATED: steffakasid/homebrew-awsclean
 
-## How do I install these formulae?
+This tap is deprecated.
 
-`brew install steffakasid/awsclean/awsclean`
+Use the consolidated tap instead:
 
-Or `brew tap steffakasid/awsclean` and then `brew install awsclean`.
+```bash
+brew tap steffakasid/tap
+brew install steffakasid/tap/awsclean
+brew install steffakasid/tap/amiclean
+```
 
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+For full installation instructions, see the consolidated tap README:
+https://github.com/steffakasid/homebrew-tap
